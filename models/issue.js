@@ -19,6 +19,7 @@ const issueSchema = new mongoose.Schema({
   isExpired: String,
   description: String,
   createdAt: Date,
+  organizationName: { type: String, default: null },
 });
 
 issueSchema.plugin(AutoIncrement, { inc_field: `id` });
