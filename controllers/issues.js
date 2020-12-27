@@ -4,7 +4,6 @@ import Issue from '../models/issue.js';
 import mongoose from "mongoose";
 
 export const getIssues = async (req, res) => {
-  console.log(req.body);
   try {
     const postMessages = await Issue.find();
 
